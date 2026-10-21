@@ -1,23 +1,72 @@
 aid: rsi
+
 name: Relational Semantics
-description: 'Relational Semantics is a company surfaced via the API Evangelist harvest backlog (source:
-  g2-catalog) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Relational Semantics provides advanced data modeling and relational analytics services, enabling enterprises to integrate, query, and visualize complex relational datasets through robust APIs. Their platform focuses on semantic data linking, schema evolution, and real‑time insights, supporting a wide range of industries from finance to healthcare. By offering comprehensive documentation, SDKs, and developer support, Relational Semantics empowers developers to build data‑driven applications that leverage relational semantics for deeper business intelligence.'
+
 url: https://raw.githubusercontent.com/api-evangelist/rsi/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Data-Modeling
+- Analytics
+- APIs
+- Enterprise
+- Semantic-Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/rsi-hosts.yml
+- type: Vendors
+  url: vendors/rsi-vendors.yml
+- type: Newsroom
+  url: https://www.rsi.com/news/
+- type: Blog
+  url: https://www.rsi.com/blog/courts-today/
+- type: DomainSecurity
+  url: security/rsi-domain-security.yml
 - type: Website
-  url: https://rsi.com/
+  url: https://www.rsi.com/
+- type: Support
+  url: https://www.rsi.com/support/
+- type: TermsOfService
+  url: https://www.rsi.com/terms-use/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-21'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://rsi.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

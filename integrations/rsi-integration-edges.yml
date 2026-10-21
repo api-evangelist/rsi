@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/rsi/integrations
+- https://zapier.com/apps/relational-semantics/integrations
+- https://n8n.io/integrations/rsi/
+- https://composio.dev/toolkits/rsi
+- https://monid.ai/tools/rsi
+checked:
+- https://composio.dev/toolkits/rsi
+- https://monid.ai/tools/rsi
+- https://n8n.io/integrations/rsi/
+- https://zapier.com/apps/relational-semantics/integrations
+- https://zapier.com/apps/rsi/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
